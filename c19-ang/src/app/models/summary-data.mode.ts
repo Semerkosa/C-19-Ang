@@ -1,29 +1,28 @@
-export interface ISummaryDataModel {
-  ID: string;
-  Message: string;
+export class ISummaryDataModel {
+  ID: '' | undefined;
+  Message: '' | undefined;
   Global: {
-    NewConfirmed: number;
-    TotalConfirmed: number;
-    NewDeaths: number;
-    TotalDeaths: number;
-    NewRecovered: number;
-    TotalRecovered: number;
+    NewConfirmed: 0;
+    TotalConfirmed: 0;
+    NewDeaths: 0;
+    TotalDeaths: 0;
+    NewRecovered: 0;
+    TotalRecovered: 0;
     Date: Date;
-  };
+  } | undefined;
   Countries: [
     {
-      ID: string;
-      Country: string;
-      CountryCode: string;
-      Slug: string;
-      NewConfirmed: number;
-      TotalConfirmed: number;
-      NewDeaths: number;
-      TotalDeaths: number;
-      NewRecovered: number;
-      TotalRecovered: number;
+      ID: '';
+      Country: '';
+      CountryCode: '';
+      Slug: '';
+      NewConfirmed: 0;
+      TotalConfirmed: 0;
+      NewDeaths: 0;
+      TotalDeaths: 0;
+      NewRecovered: 0;
+      TotalRecovered: 0;
       Date: Date;
-      Premium: {};
     }
-  ];
+  ] | undefined;
 }
