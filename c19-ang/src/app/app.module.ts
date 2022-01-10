@@ -8,7 +8,9 @@ import { FooterComponent } from './modules/fragments/footer/footer.component';
 import { NavbarComponent } from './modules/fragments/navbar/navbar.component';
 import { HomeComponent } from './modules/pages/home/home.component';
 import { StatisticsComponent } from './modules/pages/statistics/statistics.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { SideBarComponent } from './modules/fragments/side-bar/side-bar.component';
+import { ContactComponent } from './modules/pages/contact/contact.component'
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { HttpClientModule } from '@angular/common/http'
     FooterComponent,
     NavbarComponent,
     HomeComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    SideBarComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

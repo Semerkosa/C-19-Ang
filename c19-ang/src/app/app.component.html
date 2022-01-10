@@ -1,4 +1,12 @@
-<h1>C19-Ang</h1>
 <app-header></app-header>
-<app-statistics></app-statistics>
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <app-side-bar></app-side-bar>
+        </div>
+        <div class="col-9">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
 <app-footer></app-footer>
